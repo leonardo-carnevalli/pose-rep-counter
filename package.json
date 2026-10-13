@@ -1,0 +1,43 @@
+{
+  "name": "pose-rep-counter",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "typecheck": "next typegen && tsc --noEmit",
+    "test": "vitest run",
+    "fixtures": "tsx scripts/generate-fixtures.ts",
+    "accuracy": "tsx scripts/accuracy.ts",
+    "screenshots": "tsx scripts/screenshots.ts",
+    "e2e": "playwright test"
+  },
+  "dependencies": {
+    "@mediapipe/tasks-vision": "1.1.0",
+    "next": "16.4.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.0",
+    "@tailwindcss/turbopack": "^4",
+    "@types/node": "^24.19.2",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.4.0",
+    "tailwindcss": "^4",
+    "tsx": "^4.23.15",
+    "typescript": "^5",
+    "vitest": "^5.0.4"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "description": "Webcam rep counter with form cues, running fully in the browser with MediaPipe Pose.",
+  "license": "MIT",
+  "author": "Leonardo Carnevalli"
+}
